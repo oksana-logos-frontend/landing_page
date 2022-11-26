@@ -1,0 +1,15 @@
+{
+  "name": "landing_page",
+  "source": "src/index.html",
+  "scripts": {
+    "deploy": "gh-pages -d src",
+    "lint": "eslint src/style --fix --color"
+  },
+  "dependencies": {
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "gh-pages": "^4.0.0"
+  }
+}

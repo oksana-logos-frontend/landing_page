@@ -1,0 +1,69 @@
+.form {
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &__input {
+    // width: 100%;
+    height: 46px;
+    margin-bottom: 19px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: right;
+    border: none;
+    outline: none;
+
+    @include onBigScreen {
+      height: 56px;
+      margin-bottom: 29px;
+    }
+  }
+
+  &__label {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 19px;
+    cursor: default;
+    transition: color 300ms;
+
+    @include onBigScreen {
+      margin-bottom: 29px;
+    }
+
+    &:hover {
+      color: #9EEB00;
+    }
+  }
+
+  &__ckeckbox {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+  }
+
+  &__button {
+    width: 100%;
+    height: 43px;
+    border-radius: 5px;
+    background: rgb(255,255,255);
+    border: none;
+    outline: none;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(158,235,0,1) 35%);
+    font-size: 24px;
+    font-weight: bold;
+    transition: background 300ms;
+
+    @include onBigScreen {
+      height: 53px;
+    }
+
+    &:hover {
+      background: linear-gradient(rgba(158,235,0,1) 35%);
+    }
+
+    &:active {
+      background: linear-gradient(rgb(190, 255, 59) 35%);
+    }
+  }
+}
