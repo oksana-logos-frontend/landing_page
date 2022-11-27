@@ -1,0 +1,69 @@
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/1920.png);
+  background-position-x: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__container {
+    width: 35%;
+    height: fit-content;
+    position: absolute;
+    right: 10%;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include onBigScreen {
+      top: 158px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 31px;
+  }
+
+  &__title > span {
+    color: white;
+    display: block;
+    margin-bottom: 17px;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    cursor: default;
+    transition: color 300ms;
+
+    @include onBigScreen {
+      font-size: 44px;
+      line-height: 60px;
+    }
+
+    &:hover {
+      color: #9EEB00;
+    }
+  }
+
+  &__text {
+    width: 500px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 34px;
+    margin-bottom: 22px;
+    cursor: default;
+    transition: color 300ms;
+
+    @include onBigScreen {
+      font-size: 25px;
+      line-height: 44px;
+    }
+
+    &:hover {
+      color: #9EEB00;
+    }
+  }
+}
