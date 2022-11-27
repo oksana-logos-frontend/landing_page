@@ -9,7 +9,8 @@
     "build": "parcel build"
   },
   "dependencies": {
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
