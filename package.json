@@ -1,15 +1,20 @@
 {
   "name": "landing_page",
   "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "deploy": "gh-pages -d src",
-    "lint": "eslint src/style --fix --color"
+    "lint": "eslint src/style --fix --color",
+    "start": "parcel --open",
+    "build": "parcel build"
   },
   "dependencies": {
     "sass": "^1.56.1"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
     "eslint": "^8.28.0",
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.8.0"
   }
 }
