@@ -15,7 +15,7 @@ Implemented in two sizes: mobile(360px) and desktop(1920px).
 - HTML
 - SCSS
 - CSS
--JS
+- JS
 
 ## Library 
 - Swiper
