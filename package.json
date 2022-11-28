@@ -1,9 +1,11 @@
 {
   "name": "landing_page",
   "source": "src/index.html",
+  "homepage": "https://oksana-logos-frontend.github.io/lending_page/",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "deploy": "gh-pages -d src",
+    "predeploy": "rm -rf build & npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint src/style --fix --color",
     "start": "parcel --open",
     "build": "parcel build"
