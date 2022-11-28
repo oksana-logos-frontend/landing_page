@@ -1,0 +1,134 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 18px 14px 41px;
+  border-radius: 21px;
+  background: rgba(0,0,0,0.6);
+  -webkit-backdrop-filter: blur(21px);
+  backdrop-filter: blur(21px);
+  
+  @include onDesktop {
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+  }
+
+  &__text {
+    width: 100%;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    cursor: default;
+    z-index: 2;
+    margin-bottom: 10px;
+    transition: color 300ms;
+
+    @include onDesktop {
+      width: 500px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 34px;
+      margin: 0 auto 22px;
+    }
+    
+    @include onBigScreen {
+      font-size: 25px;
+      line-height: 44px;
+    }
+
+    &:hover {
+      color: #9EEB00;
+    }
+  }
+
+  &__input {
+    text-align: right;
+    height: 56px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 29px;
+    padding: 0 10px;
+    z-index: 2;
+
+    @include onDesktop {
+      width: 328px;
+      height: 46px;
+      display: block;
+      margin: 0 auto 19px;
+    }
+
+    @include onBigScreen {
+      height: 56px;
+      margin-bottom: 29px;
+    }
+  }
+
+  &__label {
+    color: white;
+    font-size: 14px;
+    cursor: default;
+    z-index: 2;
+    margin-bottom: 19px;
+    transition: color 300ms;
+
+    @include onDesktop {
+      font-size: 15px;
+      display: block;
+      margin: 0 auto 19px;
+    }
+
+    @include onBigScreen {
+      margin-bottom: 29px;
+    }
+
+    &:hover {
+      color: #9EEB00;
+    }
+  }
+
+  &__ckeckbox {
+    width: 15px;
+    height: 15px;
+    margin-left: 21px;
+    border: none;
+    z-index: 2;
+
+    @include onDesktop {
+      margin-left: 10px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: 53px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(158,235,0,1) 35%);
+    transition: color 300ms, box-shadow 300ms;
+
+    @include onDesktop {
+      display: block;
+      margin: 0 auto;
+      width: 328px;
+      height: 43px;
+    }
+
+    @include onBigScreen {
+      height: 53px;
+    }
+
+    &:hover {
+      color: white;
+      box-shadow: 0px 2px 10px #00000059;
+    }
+  }
+}
