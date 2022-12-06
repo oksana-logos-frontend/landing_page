@@ -71,7 +71,7 @@
   &__label {
     color: white;
     font-size: 14px;
-    cursor: default;
+    cursor: pointer;
     z-index: 2;
     margin-bottom: 19px;
     transition: color 300ms;
@@ -113,6 +113,7 @@
     font-weight: bold;
     z-index: 2;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(158,235,0,1) 35%);
+    cursor: pointer;
     transition: color 300ms, box-shadow 300ms;
 
     @include onDesktop {
