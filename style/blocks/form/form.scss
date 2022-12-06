@@ -96,6 +96,7 @@
     height: 15px;
     margin-left: 21px;
     border: none;
+    cursor: pointer;
     z-index: 2;
 
     @include onDesktop {

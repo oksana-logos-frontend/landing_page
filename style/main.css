@@ -237,7 +237,7 @@ ul {
 .form__label {
   color: white;
   font-size: 14px;
-  cursor: default;
+  cursor: pointer;
   z-index: 2;
   margin-bottom: 19px;
   -webkit-transition: color 300ms;
@@ -267,6 +267,7 @@ ul {
   height: 15px;
   margin-left: 21px;
   border: none;
+  cursor: pointer;
   z-index: 2;
 }
 
@@ -287,6 +288,7 @@ ul {
   z-index: 2;
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(35%, #9eeb00));
   background: linear-gradient(180deg, white 0%, #9eeb00 35%);
+  cursor: pointer;
   -webkit-transition: color 300ms, -webkit-box-shadow 300ms;
   transition: color 300ms, -webkit-box-shadow 300ms;
   transition: color 300ms, box-shadow 300ms;
